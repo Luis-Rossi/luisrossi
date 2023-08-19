@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&family=Major+Mono+Display&family=Tilt+Warp&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightColor: #ededed;
+    --color: #f2b90f;
+    --darkColor: rgba(21, 30, 38, 0.8);
+}
+
+body {
+    background: var(--darkColor);
+    color: var(--lightColor);
+}
+
+/* 
+-------------------------------------------------
+                     INTRO 
+-------------------------------------------------
+*/
+
+.bg-video {
+    position: fixed;
+    right: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bg-video video {
+    width: 100%;
+}
+
+
+.intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--darkColor);
+}
+
+.intro .logo {
+    font-family: 'Major Mono Display', monospace;
+    position: relative;
+    font-size: 5em;
+    color: var(--color);
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.intro p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+ nav.social {
+     position: relative;
+     right: 0;
+     width: 9rem;
+     display: flex;
+     justify-content: space-between;
+     margin-top: 2rem;
+ }
+ 
+ nav.social a{
+     position: relative;
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 60px;
+     height: 60px;
+     background: transparent;
+     border: 2px solid #fff;
+     border-radius: 50%;
+     font-size: 2rem;
+     color: #fff;
+     text-decoration: none;
+     z-index: 1;
+     overflow: hidden;
+     transition: .5s;
+ }
+ 
+ nav.social a:nth-child(1) {
+     font-size: 2rem;
+ }
+ 
+ nav.social a:hover {
+     color: #f2b90f;
+     border-color: #f2b90f;
+     scale: 1.1;
+ }
